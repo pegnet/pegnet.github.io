@@ -32,6 +32,21 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pegnet/pegnet.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
+### Local Development
+
+Requires Ruby & Rubygems
+
+Get an auto-reloading dev server
+```
+gem install bundler
+cd ./pegnet.github.io
+bundle install
+bundle exec jekyll serve --livereload
+```
+
+And just edit the `*.md` files.
+
+
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
