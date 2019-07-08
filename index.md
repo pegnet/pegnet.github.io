@@ -11,3 +11,4 @@ A Stablecoin system for the Factom blockchain.
 * [Reddit](https://www.reddit.com/r/PegNet/)
 * [Discord](https://discord.gg/V6T7mCW)
 * [Github](https://github.com/pegnet)
+* [FAQ](https://docs.google.com/document/d/1krBbcd71RAMp6Brc3CNfXMUBFMitFY9y9IV5jRLUV_s/edit?usp=sharing)
