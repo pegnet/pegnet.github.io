@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: PegNet
 description: A stablecoin on top of the Factom Blockchain.
+logo: "assets/img/logo.png"
