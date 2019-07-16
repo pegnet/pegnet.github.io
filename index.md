@@ -3,8 +3,8 @@
 A Stablecoin system for the Factom blockchain.
 
 ### HOWTO
-* [Mining](./howto/mining)
-* [Trading](./howto/trading)
+* [Mining](https://docs.google.com/document/d/1F0cPSDU_aIkAvbd6T62rV0ZRFGgP0O5mpYEHntFAx-A/edit?usp=sharing)
+* [Trading](https://docs.google.com/document/d/1mQ909_Ug4SLCkKlkUt_gtHY7W2Pbcx55HhDUjVByh3Q/edit?usp=sharing)
 
 ### Resources
 * [Developers QuickStart](https://github.com/pegnet/pegnet/wiki/Developer-Quickstart)
