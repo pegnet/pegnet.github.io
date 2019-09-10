@@ -41,15 +41,12 @@ html, body {
     background: #0872b9;
 }
 
-.header .navbar-logo {
-    padding-right: 20px;
-    border-width: 0 1px 0 0;
-    border-style: solid;
-    border-color: rgba(255,255,255,0.2);
-}
-
 .header .navbar-brand {
     margin-right: .5rem;
+}
+
+.header .navbar-collapse {
+    margin-right: 100px;
 }
 
 @media (min-width: 992px) {
@@ -198,12 +195,12 @@ html, body {
 }
 
 #developers {
-    padding: 6rem 0 2rem;
+    padding: 6rem 0 7rem;
     margin-bottom: 0;
     background: url("../img/bg-why.svg");
-    background-size: 600px;
+    background-size: 650px;
     background-repeat: no-repeat;
-    background-position-x: 120%;
+    background-position-x: 140%;
     background-position-y: -50px;
 }
 
@@ -213,10 +210,6 @@ html, body {
 
 #developers h4 {
     margin-bottom: 2rem;
-}
-
-#developers .links {
-    margin-bottom: 5rem;
 }
 
 footer {
