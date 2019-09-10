@@ -66,16 +66,12 @@ html, body {
 }
 
 #about {
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-bottom: 0rem;
     background: url("../img/bg-why.svg");
     background-size: 500px;
     background-repeat: no-repeat;
     background-position-x: -250px;
-}
-
-#about .row {
-    padding-bottom: 3rem;
 }
 
 #about .why {
@@ -86,14 +82,18 @@ html, body {
     margin-bottom: 1rem;
 }
 
-#about .why p {
-    color: #adb5bd;
-    font-weight: lighter;
-}
-
 #about .why img {
     height: 64px;
     margin-bottom: 1rem;
+}
+
+#about .why p, #about .why-desc p {
+    color: #6c757d;
+    font-weight: lighter;
+}
+
+#about #assets {
+    margin-top: 5rem;
 }
 
 #about .asset-box {
@@ -132,6 +132,10 @@ html, body {
     padding-left: 3px;
 }
 
+#about #usecase {
+    margin-top: 5rem;
+}
+
 #about .usecase {
     margin-top: 2.5rem;
 }
@@ -143,12 +147,13 @@ html, body {
 }
 
 #about .usecase p {
-    color: #adb5bd;
+    color: #6c757d;
     font-weight: lighter;
 }
 
 #traders {
-    margin-bottom: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
 }
 
 #traders .traders-alert {
@@ -161,7 +166,7 @@ html, body {
 
 #community {
     background: #f8f9fa;
-    padding: 4.5rem 0;
+    padding: 6rem 0;
 }
 
 #community h4 {
@@ -193,7 +198,7 @@ html, body {
 }
 
 #developers {
-    padding: 4.5rem 0 0;
+    padding: 6rem 0 2rem;
     margin-bottom: 0;
     background: url("../img/bg-why.svg");
     background-size: 600px;
@@ -228,17 +233,28 @@ footer .container {
     background-position: center center;
 }
 
+footer .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 footer .nav-link {
     color: #FFF;
+    padding: .5rem 2rem .5rem 0;
+}
+
+footer .nav-link:hover {
+    text-decoration: underline;
 }
 
 footer .social {
     font-size: 2rem;
+    text-align: right;
 }
 
 footer .social a {
     color: #FFF;
-    margin-left: 8px;
+    margin-left: 12px;
     opacity: 0.75;
 }
 
@@ -247,5 +263,9 @@ footer .social a:hover {
 }
 
 footer .logo {
-    max-height: 40px;
+    text-align: left;
+}
+
+footer .logo img {
+    max-width: 150px;
 }
