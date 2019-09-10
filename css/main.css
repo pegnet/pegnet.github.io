@@ -1,0 +1,251 @@
+html, body {
+    font-family: 'Lato', sans-serif;
+    background: #FFF;
+}
+
+.header {
+    background: #0b3151;  /* fallback for old browsers */
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    height: 34vw;
+    min-height: 400px;
+    overflow-y: hidden;
+}
+
+.header .header-col {
+    color: #FFF;
+    margin-bottom: 4.5rem;
+}
+
+.header h3 {
+    font-weight: 300;
+}
+
+.header a.nav-item {
+    color: #FFF;
+}
+
+.header a.nav-item:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.header .btn-blue {
+    background: #007bff;
+    padding-left: 20px;
+    padding-right: 18px;
+    color: #FFF;
+}
+
+.header .btn-blue:hover {
+    background: #0872b9;
+}
+
+.header .navbar-logo {
+    padding-right: 20px;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.2);
+}
+
+.header .navbar-brand {
+    margin-right: .5rem;
+}
+
+@media (min-width: 992px) {
+    .header .navbar-expand-md .navbar-nav .nav-link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .header .navbar-logo {
+        border-width: 0;
+    }
+}
+
+#about {
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+    background: url("../img/bg-why.svg");
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position-x: -250px;
+}
+
+#about .row {
+    padding-bottom: 3rem;
+}
+
+#about .why {
+    margin-top: 2.5rem;
+}
+
+#about .why h4 {
+    margin-bottom: 1rem;
+}
+
+#about .why p {
+    color: #adb5bd;
+    font-weight: lighter;
+}
+
+#about .why img {
+    height: 64px;
+    margin-bottom: 1rem;
+}
+
+#about .asset-box {
+    margin-top: 2rem;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+#about .asset-box h4 {
+    margin-bottom: 0.8rem;
+    font-weight: normal;
+}
+
+#about .asset-box img {
+    height: 60px;
+    margin-bottom: 0.8rem;
+}
+
+#about .asset-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about .asset-box ul li:before {
+    content: "▶";
+    padding-right: 8px;
+    color: #0872b9;
+    font-weight: normal;
+    font-size: 66%;
+}
+
+#about .asset-box ul li .text-muted {
+    font-size: 90%;
+    opacity: 0.5;
+    padding-left: 3px;
+}
+
+#about .usecase {
+    margin-top: 2.5rem;
+}
+
+#about .usecase h4 {
+    margin-bottom: 1rem;
+    color: #0872b9;
+    font-weight: normal;
+}
+
+#about .usecase p {
+    color: #adb5bd;
+    font-weight: lighter;
+}
+
+#traders {
+    margin-bottom: 4rem;
+}
+
+#traders .traders-alert {
+    color: #FFF;
+    font-weight: normal;
+    background: #007bff;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#community {
+    background: #f8f9fa;
+    padding: 4.5rem 0;
+}
+
+#community h4 {
+    margin-top: 1.5rem;
+    color: #6c757d;
+}
+
+#community .social {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+#community .social a {
+    font-size: 3rem;
+    margin: 0 .8rem;
+}
+
+#miners {
+    background: #0C3252;
+    background-image: url("../img/bg-miners.jpg");
+    background-size: cover;
+    color: #FFF;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+}
+
+#miners h1 {
+    margin-bottom: 2rem;
+}
+
+#developers {
+    padding: 4.5rem 0 0;
+    margin-bottom: 0;
+    background: url("../img/bg-why.svg");
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position-x: 120%;
+    background-position-y: -50px;
+}
+
+#developers h1 {
+    margin-bottom: 1rem;
+}
+
+#developers h4 {
+    margin-bottom: 2rem;
+}
+
+#developers .links {
+    margin-bottom: 5rem;
+}
+
+footer {
+    margin-top: 0;
+    background: #0C3252;
+    color: #FFF;
+}
+
+footer .container {
+    padding: 3rem 0;
+    background: url("../img/bg-footer.jpg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+footer .nav-link {
+    color: #FFF;
+}
+
+footer .social {
+    font-size: 2rem;
+}
+
+footer .social a {
+    color: #FFF;
+    margin-left: 8px;
+    opacity: 0.75;
+}
+
+footer .social a:hover {
+    opacity: 1;
+}
+
+footer .logo {
+    max-height: 40px;
+}
