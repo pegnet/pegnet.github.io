@@ -106,7 +106,7 @@ html, body {
 }
 
 #about .asset-box img {
-    height: 60px;
+    height: 50px;
     margin-bottom: 0.8rem;
 }
 
@@ -116,7 +116,7 @@ html, body {
 }
 
 #about .asset-box ul li:before {
-    content: "▶";
+    content: "→";
     padding-right: 8px;
     color: #0872b9;
     font-weight: normal;
@@ -150,15 +150,31 @@ html, body {
 
 #traders {
     margin-top: 5rem;
-    margin-bottom: 6rem;
+    margin-bottom: 0rem;
 }
 
 #traders .traders-alert {
     color: #FFF;
     font-weight: normal;
-    background: #007bff;
+    background: rgb(8, 114, 185);;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
+    padding: 3rem 0 4rem 0;
+}
+
+#traders .icon {
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+#traders h1 {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#traders h2 {
+    line-height: 1.6;
 }
 
 #community {
@@ -169,6 +185,7 @@ html, body {
 #community h4 {
     margin-top: 1.5rem;
     color: #6c757d;
+    line-height: 1.5;
 }
 
 #community .social {
@@ -194,6 +211,10 @@ html, body {
     margin-bottom: 2rem;
 }
 
+#miners h4 {
+    line-height: 1.5;
+}
+
 #developers {
     padding: 6rem 0 7rem;
     margin-bottom: 0;
@@ -210,6 +231,7 @@ html, body {
 
 #developers h4 {
     margin-bottom: 2rem;
+    line-height: 1.5;
 }
 
 footer {
