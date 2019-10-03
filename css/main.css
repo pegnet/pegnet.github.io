@@ -167,7 +167,7 @@ html, body {
 #traders .traders-alert {
     color: #FFF;
     font-weight: normal;
-    background: rgb(8, 114, 185);;
+    background: rgb(8, 114, 185);
     margin-top: 1rem;
     margin-bottom: 0rem;
     padding: 3rem 0 4rem 0;
@@ -300,4 +300,15 @@ footer .logo {
 
 footer .logo img {
     max-width: 150px;
+}
+
+#stats {
+    background: rgb(8, 114, 185);
+    color: #FFF;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#stats a {
+    color: #FFF;
 }
