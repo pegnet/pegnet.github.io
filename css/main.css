@@ -7,6 +7,7 @@ html, body {
     background: #0b3151;  /* fallback for old browsers */
     background-image: url("../img/header.jpg");
     background-size: cover;
+    background-position: 50% 50%;
     height: 34vw;
     min-height: 400px;
     overflow-y: hidden;
@@ -23,6 +24,12 @@ html, body {
 
 .header h3 {
     font-weight: 300;
+}
+
+.header h4 {
+    font-weight: 300;
+    background: rgba(21,116,183,0.9);
+    border-radius: 6px;
 }
 
 .header a.nav-item {
@@ -69,7 +76,10 @@ html, body {
         border-width: 0;
     }
     .header h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+    .header h4 {
+        font-size: 1.2rem;
     }
 }
 
