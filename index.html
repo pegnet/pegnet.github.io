@@ -369,7 +369,6 @@
 
             $.getJSON("https://pegnetmarketcap.com/api/asset-data?api_token=8iFDeJVLw4pOXpagkMMZlIRXW5MG5aNlE3XsnTESPGFbzc3bJj9xCLVXTCjB",
             function(data) {
-                console.log(data);
                 $("#widget-mcap").fadeOut(function() {
                     $(this).text(currencyFormat(data.market_cap));
                 }).fadeIn();
