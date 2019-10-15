@@ -198,6 +198,41 @@ html, body {
     line-height: 1.6;
 }
 
+#traders .widget-block {
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 6px;
+    background: rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0px 0px 22px -11px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 0px 0px 22px -11px rgba(0,0,0,0.4);
+    box-shadow: inset 0px 0px 22px -11px rgba(0,0,0,0.4);
+}
+
+#traders .widget-block small {
+    color: rgba(255,255,255,0.5);
+}
+
+#traders .widget-block .asset {
+    font-size: 1.5rem;
+}
+
+#traders .widget-block .metrics {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #2ecc71;
+}
+
+#traders .btn-trading {
+    color: #FFF;
+    border: 1px solid rgba(255,255,255,0.6);
+}
+
+#traders .btn-trading:hover {
+    background: #FFF;
+    color: rgb(8, 114, 185);
+    border-color: #FFF;
+}
+
 #community {
     background: #f8f9fa;
     padding: 6rem 0;

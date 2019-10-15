@@ -21,7 +21,7 @@
     <meta name="twitter:site" content="@PegNetNews">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css?v=3">
+	<link rel="stylesheet" href="css/main.css?v=4">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
 
@@ -50,7 +50,7 @@
             <div class="row text-center justify-content-center">
                 <div class="col-12 col-sm-9">
                     <a href="https://factoshi.io/pegnet" target="_blank">
-                        <i class="fas fa-chart-area mr-2"></i>PegNet realtime metrics: prices, hashrate, mining difficulty →
+                        <i class="fas fa-chart-area mr-2"></i>PegNet realtime hashrate, mining difficulty →
                     </a>
                 </div>
             </div>
@@ -225,19 +225,59 @@
     </section>
 
     <section id="traders">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                </div>
-            </div>
-        </div>
         <div class="container-fluid traders-alert">
             <div class="container">
+                <div class="row text-center justify-content-center mb-3 mt-3">
+                    <div class="col-12 col-xs-12">
+                        <h1 class="mb-1">PegNet Market Cap</h1>
+                        <h2>
+                            <strong id="widget-mcap">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </strong>
+                        </h2>
+                    </div>
+                    <div class="col-10 col-md-3 widget-block">
+                        <p class="mb-2">Top volume <small>(24H)</small></p>
+                        <div id="widget-top-volume">
+                            <p class="asset mb-0"><i class="fas fa-spinner fa-spin"></i></span>
+                            <p class="metrics mb-1"></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-1">
+                    </div>
+                    <div class="col-10 col-md-3 widget-block">
+                        <p class="mb-2">Biggest price gain <small>(24H)</small></p>
+                        <div id="widget-price-gain">
+                            <p class="asset mb-0"><i class="fas fa-spinner fa-spin"></i></span>
+                            <p class="metrics mb-1"></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-1">
+                    </div>
+                    <div class="col-10 col-md-3 widget-block">
+                        <p class="mb-2">Biggest supply gain <small>(24H)</small></p>
+                        <div id="widget-supply-gain">
+                            <p class="asset mb-0"><i class="fas fa-spinner fa-spin"></i></span>
+                            <p class="metrics mb-1"></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-12">
+                        <p class="mt-5">
+                            Data provided by
+                            <a href="https://pegnetmarketcap.com" target="_blank" class="ml-2">
+                                <img src="/img/PegNetMarketCap.svg" height="32" />
+                            </a>
+                        </p>
+                    </div>
+                </div>
                 <div class="row text-center justify-content-center">
                     <div class="col-12 p-4">
                         <p class="icon"><i class="fas fa-chart-line"></i></p>
                         <h1>Traders</h1>
                         <h2>Unlimited opportunities.<br />Unlimited conversions between assets at just 1/10th of a cent per trade.<br />No middle men taking a cut of your trades, no spread, no smart contracts, and no counterparty risk.</h2>
+                        <p class="mt-4">
+                            <a href="https://github.com/pegnet/pegnetd/wiki" target="_blank" class="btn btn-lg btn-trading">Start Trading</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -315,6 +355,7 @@
                     <a href="https://twitter.com/PegNetNews" target="_blank"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.reddit.com/r/PegNet/" target="_blank"><i class="fab fa-reddit"></i></a>
                     <a href="https://discord.gg/eKjyySD" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://t.me/PegnetOfficial" target="_blank"><i class="fab fa-telegram"></i></a>
                 </div>
     
             </div>
@@ -325,6 +366,26 @@
 
     <script type="text/javascript">
         $(function () {
+
+            $.getJSON("https://pegnetmarketcap.com/api/asset-data?api_token=8iFDeJVLw4pOXpagkMMZlIRXW5MG5aNlE3XsnTESPGFbzc3bJj9xCLVXTCjB",
+            function(data) {
+                console.log(data);
+                $("#widget-mcap").fadeOut(function() {
+                    $(this).text(currencyFormat(data.market_cap));
+                }).fadeIn();
+                $("#widget-top-volume").fadeOut(function() {
+                    $(this).children(".asset").text(data.top_volume.asset);
+                    $(this).children(".metrics").text(currencyFormat(data.top_volume.volume*data.top_volume.price));
+                }).fadeIn();                
+                $("#widget-price-gain").fadeOut(function() {
+                    $(this).children(".asset").text(data.biggest_price_gain.asset);
+                    $(this).children(".metrics").text(percentFormat(data.biggest_price_gain.gain));
+                }).fadeIn();                
+                $("#widget-supply-gain").fadeOut(function() {
+                    $(this).children(".asset").text(data.biggest_supply_gain.asset);
+                    $(this).children(".metrics").text(percentFormat(data.biggest_supply_gain.gain));
+                }).fadeIn();                
+            });
 
             $(".scroll-to-top").click(function (e){
                 $('html, body').animate({
@@ -368,6 +429,15 @@
                 e.preventDefault();
             });
         })
+
+        function currencyFormat(num) {
+            return '$' + num.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+        }
+
+        function percentFormat(num) {
+            return '+' + num + ' %';
+        }
+
     </script>
 
 </body>
