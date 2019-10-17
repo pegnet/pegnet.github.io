@@ -216,6 +216,10 @@ html, body {
     font-size: 1.5rem;
 }
 
+#traders .widget-block a {
+    color: #FFF;
+}
+
 #traders .widget-block .metrics {
     font-weight: bold;
     font-size: 1.3rem;
