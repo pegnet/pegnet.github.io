@@ -300,6 +300,105 @@ html, body {
     margin-bottom: 10px;
 }
 
+#roadmap {
+    padding: 6rem 0 7rem;
+    margin-bottom: 0;
+    background: #f8f8f8;
+}
+
+#roadmap h1 {
+    margin-bottom: 3rem;
+}
+
+#roadmap ul.timeline {
+    list-style-type: none;
+    position: relative;
+    margin-left: -3px;
+}
+
+#roadmap ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+#roadmap ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+#roadmap ul.timeline > li:before {
+    content: ' ';
+    background: #fcfcfc;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #d4d9df;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    z-index: 400;
+}
+
+#roadmap ul.timeline > li.m-ready:before {
+    background: url("../assets/roadmap/ready.jpg");
+    background-size: 30px 30px;
+    border-width: 0;
+}
+
+#roadmap ul.timeline > li.m-ongoing:before {
+    background: url("../assets/roadmap/ongoing.jpg");
+    background-size: 30px 30px;
+    border-width: 0;
+}
+
+#roadmap ul.timeline > li.p-titan:before {
+    background: url("../assets/projects/titan.jpg");
+    background-size: 30px 30px;
+    border-width: 0;
+}
+
+#roadmap ul.timeline > li.p-calisto:before {
+    background: url("../assets/projects/calisto.jpg");
+    background-size: 30px 30px;
+    border-width: 0;
+}
+
+#roadmap ul.timeline > li.p-ganymede:before {
+    background: url("../assets/projects/ganymede.jpg");
+    background-size: 30px 30px;
+    border-width: 0;
+}
+
+#roadmap ul.timeline > li.p-nebula:before {
+    background: url("../assets/projects/nebula.jpg");
+    background-size: 30px 30px;
+    border-width: 0;
+}
+
+#roadmap ul.timeline > li.p-quasar:before {
+    background: url("../assets/projects/quasar.jpg");
+    background-size: 30px 30px;
+    border-width: 0;
+}
+
+#roadmap ul.timeline > li.p-dark-star:before {
+    background: url("../assets/projects/dark-star.jpg");
+    background-size: 30px 30px;
+    border-width: 0;
+}
+
+#roadmap ul.timeline > li .badge {
+    padding: 0.35rem 0.45rem;
+    border-radius: 0.35rem;
+}
+
 footer {
     margin-top: 0;
     background: #0C3252;

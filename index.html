@@ -21,7 +21,7 @@
     <meta name="twitter:site" content="@PegNetNews">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css?v=5">
+	<link rel="stylesheet" href="css/main.css?v=6">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
 
@@ -49,9 +49,12 @@
         <div class="container">
             <div class="row text-center justify-content-center">
                 <div class="col-12 col-sm-9">
-                    <a href="https://factoshi.io/pegnet" target="_blank">
-                        <i class="fas fa-chart-area mr-2"></i>PegNet realtime hashrate, mining difficulty →
-                    </a>
+                    <a href="https://factoshi.io/pegnet" target="_blank" class="mr-3 ml-3">
+                        <i class="fas fa-chart-area mr-2"></i>PegNet Stats</a>
+                    <a href="https://pegnetmarketcap.com" target="_blank" class="mr-3 ml-3">
+                        <i class="fas fa-chart-line mr-2"></i>PegNetMarketCap</a>
+                    <a href="https://pexplorer.factom.com" target="_blank" class="mr-3 ml-3">
+                        <i class="fas fa-cube mr-2"></i>pExplorer</a>
                 </div>
             </div>
         </div>
@@ -71,6 +74,7 @@
                     <a class="nav-item nav-link scroll-to-traders" href="javascript:void(0)">Traders</a>
                     <a class="nav-item nav-link scroll-to-miners" href="javascript:void(0)">Miners</a>
                     <a class="nav-item nav-link scroll-to-developers" href="javascript:void(0)">Developers</a>
+                    <a class="nav-item nav-link scroll-to-roadmap" href="javascript:void(0)">Roadmap</a>
                 </div>
             </div>
         </nav>
@@ -81,11 +85,6 @@
                     <h1>The stablecoin network<br />for Decentralized Finance</h1>
                     <hr style="border-color: rgba(255,255,255,0.1);" class="mt-4 mb-4">
                     <h4 class="p-3">PegNet functions as a state channel on <nobr><i class="fab fa-ethereum ml-1 mr-2"></i>Ethereum</nobr> dedicated to stablecoin prices, conversions and transfers.</h4>
-                    <!--
-                    <p class="buttons mt-4">
-                        <a href="javascript:void(0)" class="btn btn-lg btn-blue scroll-to-miners">Mining Quickstart</a>
-                    </p>
-                    -->
                 </div>
             </div>
         </div>
@@ -308,6 +307,7 @@
                         <a href="https://www.reddit.com/r/PegNet/" target="_blank"><i class="fab fa-reddit"></i></a>
                         <a href="https://discord.gg/Xz2ZN6p" target="_blank"><i class="fab fa-discord"></i></a>
                         <a href="https://t.me/PegnetOfficial" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="javascript:void(0)" target="_blank" class="wechat-qr" data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='/img/wechat-qr.png' height=250 width=250>"><i class="fab fa-weixin"></i></a>
                     </div>
                 </div>
             </div>
@@ -344,6 +344,67 @@
         </div>
     </section>
 
+    <section id="roadmap">
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <div class="col-12 col-sm-9">
+                    <p><img src="/assets/img/logo.png" height="80"></p>
+                    <h1 class="text-primary"><strong>PegNet Roadmap</strong></h1>
+                    <ul class="timeline">
+                        <li class="m-ready">
+                            <p class="mb-2"><span class="badge badge-primary mr-1">pM1</span><span class="badge badge-success mr-1">LIVE</span></p>
+                            <p class="text-primary mb-1">Launch of PEG mining<br />
+                            <small class="text-muted">August 2019</small>
+                            </p>
+                            <p>PegNet mining went live August 19th 2019 allowing anyone with a common laptop computer to CPU mine PEG tokens. 5,000 PEG tokens are split among the top 25 miners each 10 minute block.</p>
+                        </li>
+                        <li class="m-ready">
+                            <p class="mb-2"><span class="badge badge-primary mr-1">pM2</span><span class="badge badge-success mr-1">LIVE</span></p>
+                            <p class="text-primary mb-1">Conversions between pAssets and transactions<br />
+                            <small class="text-muted">October 2019</small>
+                            </p>
+                            <p>Conversions on PegNet went live October 14th 2019 allowing any pAsset to be converted into any other pAsset inside the user's PegNet wallet without any third party involved.</p>
+                        </li>
+                        <li class="m-ongoing">
+                            <p class="mb-2"><span class="badge badge-primary mr-1">pM3</span><span class="badge badge-success mr-1">LIVE</span><span class="badge badge-info mr-1">ONGOING</span></p>
+                            <p class="text-primary mb-1">Exchanges and wallets<br />
+                            <small class="text-muted">December 2019</small>
+                            </p>
+                            <p>Arbitrage of pAssets prices between the PegNet and external exchanges (via a floating PEG token price) went live December 9th 2019. This update allows PegNet arbitragers to maintain narrow price spreads between tokens on the PegNet and external exchanges.</p>
+                        </li>
+                        <li class="p-titan">
+                            <p class="mb-2"><span class="badge badge-primary mr-1">Project TITAN</span><span class="badge badge-info mr-1">COMING SOON</span></p>
+                            <p class="text-primary mb-1">Ethereum cross-chain functionality integration</p>
+                        </li>
+                        <li class="p-calisto">
+                            <p class="mb-2"><span class="badge badge-primary mr-1">Project CALLISTO</span></p>
+                            <p class="text-primary mb-1">Decentralized Identifiers</p>
+                        </li>
+                        <li class="p-ganymede">
+                            <p class="mb-2"><span class="badge badge-primary mr-1">Project GANYMEDE</span></p>
+                            <p class="text-primary mb-1">Baskets of assets and indexes</p>
+                        </li>
+                        <li class="p-nebula">
+                            <p class="mb-2"><span class="badge badge-primary mr-1">Project NEBULA</span></p>
+                            <p class="text-primary mb-1">Additional cross-chain functionality integration</p>
+                        </li>
+                        <li class="p-quasar">
+                            <p class="mb-2"><span class="badge badge-primary mr-1">Project QUASAR</span></p>
+                            <p class="text-primary mb-1">Decentralized loans</p>
+                        </li>
+                        <li class="p-dark-star">
+                            <p class="mb-2"><span class="badge badge-primary mr-1">Project DARK STAR</span></p>
+                            <p class="text-primary mb-1">The ability to short other crypto assets</p>
+                        </li>
+                        <li>
+                            <p style="line-height: 1.8;"><a href="https://github.com/pegnet/pips" target="_blank" class="text-danger">Suggest PIP (PegNet Improvement Proposal)<i class="fas fa-external-link-alt ml-2"></i></a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
 	<footer>
 
         <div class="container">
@@ -360,6 +421,7 @@
                         <a class="nav-link scroll-to-traders" href="javascript:void(0)" target="_blank">Traders</a>
                         <a class="nav-link scroll-to-miners" href="javascript:void(0)" target="_blank">Miners</a>
                         <a class="nav-link scroll-to-developers" href="javascript:void(0)" target="_blank">Developers</a>
+                        <a class="nav-link scroll-to-roadmap" href="javascript:void(0)" target="_blank">Roadmap</a>
                     </nav>
                 </div>
             
@@ -368,6 +430,7 @@
                     <a href="https://www.reddit.com/r/PegNet/" target="_blank"><i class="fab fa-reddit"></i></a>
                     <a href="https://discord.gg/Xz2ZN6p" target="_blank"><i class="fab fa-discord"></i></a>
                     <a href="https://t.me/PegnetOfficial" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="javascript:void(0)" target="_blank" class="wechat-qr" data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='/img/wechat-qr.png' height=250 width=250>"><i class="fab fa-weixin"></i></a>
                 </div>
     
             </div>
@@ -378,6 +441,8 @@
 
     <script type="text/javascript">
         $(function () {
+
+            $('[data-toggle="popover"]').popover();
 
             $.getJSON("https://pegnetmarketcap.com/api/asset-data",
             function(data) {
@@ -441,6 +506,13 @@
             $(".scroll-to-developers").click(function (e){
                 $('html, body').animate({
                     scrollTop: $("#developers").offset().top
+                }, 300);
+                e.preventDefault();
+            });
+
+            $(".scroll-to-roadmap").click(function (e){
+                $('html, body').animate({
+                    scrollTop: $("#roadmap").offset().top
                 }, 300);
                 e.preventDefault();
             });
