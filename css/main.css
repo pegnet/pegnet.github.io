@@ -60,6 +60,10 @@ html, body {
     margin-right: 100px;
 }
 
+.header .navbar {
+    background: rgba(11,50,83,0.95);
+}
+
 @media (min-width: 1199.85px) {
     .header .navbar-expand-md .navbar-nav .nav-link {
         padding-left: 1rem;
@@ -455,6 +459,7 @@ footer .logo img {
     color: #FFF;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    margin-top: 59px;
 }
 
 #stats a {
